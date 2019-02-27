@@ -1,35 +1,57 @@
+<!doctype html>
 <!DOCTYPE html>
 <html lang="pt-br">
 
     <head>
+        <title>Hello World - HTML</title>
         <meta charset="UTF-8" >
         <title>Cadastro Cliente</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
     </head>
 
     <body>
         <form method="post" action="/cadastro-cliente">
-            <label>Nome</label>
-            <input type="text" />
-
+           
+            <div class="form-group">
+             <label>Nome</label>
+             <input  class="form-control" type="text" />
+            </div>
+            
+          <div class="form-group"> 
             <label>CPF</label>
-            <input type="text" />
-
+            <input class="form-control" type="text" />
+           </div>
+           
+          <div class="form-group">
             <label>Data nascimento</label>
-            <input type="text" />
-
+            <input class="form-control" type="text" />
+          </div>
+           
+            
+            
+            
+          <div class="form-group">   
             <label>Endereço</label>
-            <input type="text" />
-
+            <input class="form-control" type="text" />
+          </div>
+          
+          <div class="form-group"> 
             <label>Cidade</label>
-            <input type="text" />
-
+            <input class="form-control" type="text" />
+          </div>
+            
+         <div class="form-group">    
             <label>Estado</label>
-            <select size="1"></select>
+            <select class="form-control" size="1"></select>
+          </div>
+           
+          <div class="form-check"> 
+             <input  class="form-check-input" type="checkbox" />
+              <label class="form-check-label">Ativo</label>
+           </div> 
 
-            <label>Ativo</label>
-            <input type="checkbox" />
-
-            <button type="submit" value="Salvar" />
+            <input class="btn btn-primary" type="submit" value="Salvar" />
         </form>
     </body>
 </html>
+</html> 
